@@ -1,7 +1,0 @@
-name = "uni_worker"
-type = "webpack"
-webpack_config="webpack.config.js"
-account_id = "XXX"
-workers_dev = true
-route = ""
-zone_id = ""

@@ -20,6 +20,8 @@ kv-namespaces = [
 
 ## Building
 
+If you do not have npm scripts enabled by default, be sure to run `patch-package` to apply any extra changes that may have been applied to dependencies.
+
 ### Development
 
 To start developing, run the following command to start up the development server. We won't have the worker script running in development so

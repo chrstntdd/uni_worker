@@ -27,7 +27,7 @@ export function main() {
     let client = createClient({
       url: "https://graphql-pokemon.now.sh/",
       /** Suspense is cool and all, but it breaks things... I guess */
-      suspense: modeQuery === "concurrent",
+      suspense: false,
       exchanges: [
         dedupExchange,
         cacheExchange,

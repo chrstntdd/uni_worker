@@ -1,12 +1,10 @@
 [build]
   base = "/"
 
-  publish = "/build"
+  publish = "/dist/browser"
 
   command = "yarn build:prod"
 
-# The following redirect is intended for use with most SPAs that handle
-# routing internally.
 [[redirects]]
   from = "/*"
   to = "/index.html"

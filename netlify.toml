@@ -1,0 +1,13 @@
+[build]
+  base = "/"
+
+  publish = "/build"
+
+  command = "yarn build:prod"
+
+# The following redirect is intended for use with most SPAs that handle
+# routing internally.
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200

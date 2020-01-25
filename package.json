@@ -4,6 +4,7 @@
   "version": "1.0.0",
   "description": "Universal React Workers sandbox",
   "scripts": {
+    "postinstall": "patch-package",
     "start:dev": "NODE_ENV=development ./node_modules/.bin/webpack-dev-server --config webpack.browser.js --silent",
     "test": "echo \"Error: no test specified\" && exit 1",
     "build:dev": "cross-env NODE_ENV=development webpack --config webpack.worker.js",
@@ -27,6 +28,8 @@
     "cross-env": "^6.0.3",
     "goober": "^1.6.4",
     "html-webpack-plugin": "^4.0.0-beta.11",
+    "patch-package": "^6.2.0",
+    "postinstall-postinstall": "^2.0.0",
     "prettier": "^1.18.2",
     "react-dev-utils": "^10.0.0",
     "terser-webpack-plugin": "^2.3.2",
@@ -44,7 +47,8 @@
     "react": "experimental",
     "react-dom": "experimental",
     "react-ssr-prepass": "^1.1.0",
-    "urql": "^1.8.2"
+    "urql": "^1.8.2",
+    "use-subscription": "^1.3.0"
   },
   "prettier": {
     "semi": false,

@@ -17,4 +17,14 @@ export declare global {
     URQL_DATA: string
     EMOJI_SET: string
   }
+
+  /**
+   * @description
+   * Pre-evaluate some code at build time using babel.
+   * The code passed to the template will not have transformations
+   * applied to it - so things like path aliasing wont work.
+   *
+   * @see https://github.com/kentcdodds/babel-plugin-preval#usage
+   */
+  const preval: any
 }

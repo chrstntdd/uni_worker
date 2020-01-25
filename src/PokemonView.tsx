@@ -42,7 +42,7 @@ const stripSpecialChars = (input: string) => input.replace(/[^\w\s-]+/gi, "")
 function PokemonView(): any {
   const [pokemonName, setPokemonName] = React.useState("MewTwo")
   const [pokeQuery, setPokeQuery] = React.useState(pokemonName)
-  const [res, executeQuery] = useQuery({
+  const [res] = useQuery({
     query: getPokemans,
     variables: {
       pokemon: pokeQuery
@@ -62,7 +62,7 @@ function PokemonView(): any {
           console.log("SUBMITTING")
           e.preventDefault()
           setPokeQuery(pokemonName)
-          executeQuery({ requestPolicy: "network-only" })
+          // executeQuery({ requestPolicy: "network-only" })
         }}
       >
         <input

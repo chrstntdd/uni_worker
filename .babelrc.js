@@ -15,6 +15,7 @@ module.exports = {
     ]
   ],
   plugins: [
+    "preval",
     [
       require.resolve("@babel/plugin-proposal-class-properties"),
       { loose: true }
